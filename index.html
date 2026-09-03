@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aurora & Defrim — Ftesë Dasme</title>
+<title>Endrit & Valentina — Ftesë Fejese</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,6 +27,7 @@
     color: var(--text-dark);
     overflow-x: hidden;
     background: #1a1008;
+    margin: 0 auto;
   }
 
   /* ── HERO — dark moody close-up flowers, olive tones ───── */
@@ -72,7 +73,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-weight: 300;
-    font-size: clamp(4.5rem, 15vw, 9rem);
+    font-size: clamp(4rem, 13vw, 8.5rem);
     color: #fff;
     line-height: 0.9;
     text-shadow: 0 4px 40px rgba(0,0,0,0.55);
@@ -80,7 +81,7 @@
   .hero-and {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: clamp(2.8rem, 9vw, 5rem);
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
     color: var(--gold);
     display: block;
     line-height: 1.15;
@@ -167,14 +168,13 @@
   }
   @keyframes scrollPulse {
     0%, 100% { opacity: 0.35; }
-    50%       { opacity: 1; }
+    50%        { opacity: 1; }
   }
 
   /* ══════════════════════════════════════════════════════
      EACH SECTION HAS ITS OWN UNIQUE BACKGROUND PHOTO
      ══════════════════════════════════════════════════════ */
 
-  /* S1 — INVITE: B&W couple embracing in a garden arch */
   .s-invite {
     position: relative;
     background-image: url('photo1.jpg');
@@ -189,7 +189,6 @@
     z-index: 0;
   }
 
-  /* S2 — DETAILS: Soft bokeh floral flatlay, warm beige */
   .s-details {
     position: relative;
     background-image: url('photo2.jpg');
@@ -204,7 +203,6 @@
     z-index: 0;
   }
 
-  /* S3 — COUNTDOWN: Moody forest path, deep green */
   .s-countdown {
     position: relative;
     background-image: url('photo3.jpg');
@@ -219,7 +217,6 @@
     z-index: 0;
   }
 
-  /* S4 — LOCATION: Elegant outdoor terrace / venue at golden hour */
   .s-location {
     position: relative;
     background-image: url('photo4.jpg');
@@ -234,7 +231,6 @@
     z-index: 0;
   }
 
-  /* S5 — RSVP: Romantic candlelit table / rose petals, very dark */
   .s-rsvp {
     position: relative;
     background-image: url('photo5.jpg');
@@ -373,19 +369,19 @@
     margin-bottom: 2.8rem;
   }
   .countdown-grid {
-  display: flex !important;
-  flex-wrap: row !important; /* Nuk e lejon ndarjen në dy rreshta */
-  justify-content: center !important;
-  gap: clamp(0.5rem, 2vw, 1.5rem) !important;
-  width: 100% !important;
-}
+    display: flex !important;
+    flex-wrap: row !important;
+    justify-content: center !important;
+    gap: clamp(0.5rem, 2vw, 1.5rem) !important;
+    width: 100% !important;
+  }
 
   .countdown-unit {
-  display: flex !important;
-  flex-direction: column !important; /* Numri lart, teksti poshtë */
-  align-items: center !important;
-  min-width: 65px !important;
-}
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    min-width: 65px !important;
+  }
 
   .countdown-num {
     font-family: 'Cormorant Garamond', serif;
@@ -393,20 +389,20 @@
     font-weight: 300;
     color: #fff;
     line-height: 1;
-    margin-bottom: 5px; /* Hapësirë mes numrit dhe tekstit */
+    margin-bottom: 5px;
     text-shadow: 0 2px 20px rgba(0,0,0,0.5);
   }
 
   .countdown-label {
-  font-family: 'Jost', sans-serif;
-  font-weight: 300;
-  font-size: 0.6rem !important;
-  letter-spacing: 0.1em !important;
-  text-transform: uppercase;
-  color: var(--gold);
-  text-align: center;
-  width: 100%;
-}
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 0.6rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+    width: 100%;
+  }
   
   .countdown-sep {
     font-family: 'Cormorant Garamond', serif;
@@ -432,25 +428,6 @@
     color: var(--text-mid);
     letter-spacing: 0.1em;
     margin-bottom: 2.5rem;
-  }
-
-  .map-btn {
-    display: inline-block;
-    border: 1px solid var(--warm-brown);
-    color: var(--warm-brown);
-    padding: 0.8rem 2.8rem;
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.68rem;
-    letter-spacing: 0.45em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .map-btn:hover { 
-    background: var(--warm-brown); 
-    color: white; 
   }
 
   /* ── RSVP (dark) ──────────────────────────────────────── */
@@ -532,118 +509,6 @@
     opacity: 1; transform: translateY(0); 
   }
 
-  /* ── MODAL ────────────────────────────────────────────── */
-  .modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(12, 7, 2, 0.9);
-    z-index: 100;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
-
-  .modal-overlay.open { 
-    display: flex; 
-  }
-
-  .modal {
-    background: var(--cream);
-    max-width: 400px;
-    width: 100%;
-    padding: 3rem 2.5rem;
-    text-align: center;
-    position: relative;
-    animation: modalIn 0.4s ease both;
-  }
-
-  @keyframes modalIn {
-    from { opacity: 0; transform: scale(0.92) translateY(20px); }
-    to   { opacity: 1; transform: scale(1) translateY(0); }
-  }
-
-  .modal-close {
-    position: absolute; top: 1rem; right: 1.2rem;
-    background: none; border: none;
-    font-size: 1.4rem; cursor: pointer;
-    color: var(--warm-brown); opacity: 0.5;
-    transition: opacity 0.2s;
-  }
-
-  .modal-close:hover { 
-    opacity: 1; 
-  }
-
-  .modal h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 1.9rem;
-    font-weight: 300;
-    color: var(--text-dark);
-    margin-bottom: 0.4rem;
-  }
-
-  .modal p {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.8rem;
-    color: var(--text-mid);
-    margin-bottom: 2rem;
-    letter-spacing: 0.04em;
-  }
-
-  .modal input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--sand);
-    background: transparent;
-    padding: 0.7rem 0;
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.85rem;
-    color: var(--text-dark);
-    margin-bottom: 1.3rem;
-    outline: none;
-    transition: border-color 0.3s;
-  }
-
-  .modal input:focus { 
-    border-bottom-color: var(--warm-brown); 
-  }
-
-  .modal input::placeholder { 
-    color: var(--taupe); 
-    letter-spacing: 0.04em; 
-  }
-
-  .modal-submit {
-    width: 100%;
-    background: var(--forest);
-    color: white;
-    border: none;
-    padding: 0.9rem;
-    font-family: 'Jost', sans-serif;
-    font-size: 0.68rem;
-    letter-spacing: 0.45em;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    transition: background 0.3s;
-  }
-  .modal-submit:hover { 
-    background: #1e3329; 
-  }
-
-  .modal-success {
-    display: none;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 1.5rem;
-    color: var(--forest);
-    padding: 1.5rem 0;
-  }
-
   /* ── CONFIRM MODAL (Viber / WhatsApp choice) ─────────── */
   .confirm-overlay {
     display: none;
@@ -669,6 +534,11 @@
     position: relative;
     animation: modalIn 0.4s ease both;
     border-radius: 2px;
+  }
+
+  @keyframes modalIn {
+    from { opacity: 0; transform: scale(0.92) translateY(20px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
   }
 
   .confirm-modal-close {
@@ -727,214 +597,101 @@
     background: rgba(0,0,0,0.05);
   }
 
-  .confirm-app-btn svg {
-    width: 54px;
-    height: 54px;
-    display: block;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.18));
+  .icon-flat {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .icon-flat img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
+
+  .whatsapp-bg { background-color: #ffffff; }
+  .viber-bg { background-color: #ffffff; }
+
+  .confirm-app-btn:hover .icon-flat {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   }
 
   .confirm-app-label {
     font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 0.68rem;
-    letter-spacing: 0.28em;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--text-mid);
   }
 
-
-  /* Rrethi i jashtëm */
-.icon-flat {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-  transition: all 0.3s ease;
-  overflow: hidden; /* Siguron që imazhi mos të dalë jashtë rrethit */
-}
-
-/* Stilimi i imazhit brenda rrethit */
-.icon-flat img {
-  width: 35px;  /* Mund ta rritësh ose zvogëlosh varësisht nga dëshira */
-  height: 35px;
-  object-fit: contain;
-}
-
-/* Ngjyrat Flat */
-.whatsapp-bg { 
-  background-color: #ffffff; 
-}
-
-.viber-bg { 
-  background-color: #ffffff; 
-}
-
-/* Efekti Hover */
-.confirm-app-btn:hover .icon-flat {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.confirm-app-label {
-  font-family: 'Jost', sans-serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--text-mid);
-}
-
-
-@media (min-width: 768px) {
-
-  section {
-    padding: 7rem 2rem;
+  @media (min-width: 768px) {
+    section { padding: 7rem 2rem; }
+    .section-inner { max-width: 700px; }
+    .hero-content { padding: 3rem; }
+    .hero-tagline, .hero-date-line { font-size: 0.8rem; }
+    .invite-body { font-size: 1rem; }
+    .details-value { font-size: 2.2rem; }
+    .countdown-grid { gap: 2.5rem; }
   }
 
-  .section-inner {
-    max-width: 700px;
+  @media (min-width: 1024px) {
+    .section-inner { max-width: 900px; }
+    .s-invite .section-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      text-align: left;
+    }
+    .couple-photo { margin: 0; }
+    .invite-heading, .invite-body, .quote-text { text-align: left; }
+    .s-details .section-inner { max-width: 600px; }
   }
 
-  .hero-content {
-    padding: 3rem;
+  @media (min-width: 1280px) {
+    .section-inner { max-width: 1100px; }
+    .hero-names { font-size: 8rem; }
+    .hero-countdown { gap: 2.5rem; }
+    .countdown-num { font-size: 5rem; }
   }
 
-  .hero-tagline,
-  .hero-date-line {
-    font-size: 0.8rem;
+  @media (max-width: 480px) {
+    .hero-names { line-height: 1; }
+    .hero-countdown { flex-wrap: wrap; gap: 1rem; }
+    .countdown-grid { gap: 1rem; }
+    .confirm-apps { flex-direction: column; gap: 1rem; }
   }
 
-  .invite-body {
-    font-size: 1rem;
+  @media (max-width: 340px) {
+    .countdown-grid {
+      gap: 0.3rem !important;
+      transform: scale(0.9);
+    }
   }
-
-  .details-value {
-    font-size: 2.2rem;
-  }
-
-  .countdown-grid {
-    gap: 2.5rem;
-  }
-
-}
-
-
-
-
-@media (min-width: 1024px) {
-
-  .section-inner {
-    max-width: 900px;
-  }
-
-  /* 2 column layout për disa seksione */
-  .s-invite .section-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    text-align: left;
-  }
-
-  .couple-photo {
-    margin: 0;
-  }
-
-  .invite-heading,
-  .invite-body,
-  .quote-text {
-    text-align: left;
-  }
-
-  .s-details .section-inner {
-    max-width: 600px;
-  }
-
-}
-
-
-
-@media (min-width: 1280px) {
-
-  .section-inner {
-    max-width: 1100px;
-  }
-
-  .hero-names {
-    font-size: 8rem;
-  }
-
-  .hero-countdown {
-    gap: 2.5rem;
-  }
-
-  .countdown-num {
-    font-size: 5rem;
-  }
-
-  .map-btn {
-    padding: 1rem 3.5rem;
-  }
-
-}
-
-
-
-@media (max-width: 480px) {
-
-  .hero-names {
-    line-height: 1;
-  }
-
-  .hero-countdown {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .countdown-grid {
-    gap: 1rem;
-  }
-
-  .confirm-apps {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-}
-
-@media (max-width: 340px) {
-  .countdown-grid {
-    gap: 0.3rem !important;
-    transform: scale(0.9); /* Zvogëlon të gjithë bllokun si tërësi */
-  }
-}
-
-
-body {
-  margin: 0 auto;
-}
-
-
 </style>
 </head>
 <body>
 
 <!-- ═══════════════════════════════════════════════
-     HERO — bg shows through, just a dark veil
+     HERO
      ═══════════════════════════════════════════════ -->
 <section class="hero">
   <div class="hero-content">
-    <p class="hero-date-top">31 · 07 · 2026</p>
+    <p class="hero-date-top">23 · 08 · 2026</p>
     <div class="hero-names">
-      Aurora<br>
+      Endrit<br>
       <span class="hero-and">&amp;</span>
-      Defrim 
+      Valentina 
     </div>
-    <p class="hero-tagline">Are Getting Married</p>
-    <p class="hero-date-line">31 · 07 · 2026 &nbsp;·&nbsp; 19:00</p>
+    <p class="hero-tagline">Fejesa Jonë</p>
+    <p class="hero-date-line">23 · 08 · 2026 &nbsp;·&nbsp; 19:00</p>
     <div class="hero-countdown">
       <div class="hero-cd-unit">
         <span class="hero-cd-num" id="h-days">000</span>
@@ -964,7 +721,7 @@ body {
 </section>
 
 <!-- ═══════════════════════════════════════════════
-     INVITATION TEXT — dark overlay, bg shows through
+     INVITATION TEXT
      ═══════════════════════════════════════════════ -->
 <section class="s-invite">
   <div class="section-inner">
@@ -990,18 +747,18 @@ body {
 </section>
 
 <!-- ═══════════════════════════════════════════════
-     DETAILS — warm taupe panel over the bg
+     DETAILS
      ═══════════════════════════════════════════════ -->
 <section class="s-details">
   <div class="section-inner">
-    <h2 class="welcome-heading reveal">Ju mirëpresim në<br>dasmën tonë!</h2>
+    <h2 class="welcome-heading reveal">Ju mirëpresim në<br>fejesën tonë!</h2>
     <div class="ornament reveal" style="color: var(--warm-brown); margin-bottom:2.5rem;">
       <div class="ornament-line"></div>
       <div class="ornament-diamond"></div>
       <div class="ornament-line"></div>
     </div>
     <p class="details-label reveal">Data</p>
-    <p class="details-value reveal">31 Korrik 2026</p>
+    <p class="details-value reveal">23 Gusht 2026</p>
     <p class="details-label reveal">Ora</p>
     <p class="details-value reveal">19:00</p>
 
@@ -1010,14 +767,11 @@ body {
 
     <p class="details-label reveal">20:00</p>
     <p class="details-value reveal">Hyrja e Çiftit</p>
-    
-
-
+  </div>
 </section>
 
-
 <!-- ═══════════════════════════════════════════════
-     LOCATION — warm taupe panel
+     LOCATION
      ═══════════════════════════════════════════════ -->
 <section class="s-location">
   <div class="section-inner">
@@ -1027,42 +781,42 @@ body {
       <div class="ornament-line"></div>
     </div>
     <p class="details-label reveal" style="color:var(--text-mid);">Vendndodhja</p>
-    <h3 class="location-name reveal">Golden Imperial</h3>
-    <p class="location-sub reveal">Prishtina, Kosovë</p>
-    <a class="map-btn reveal" href="https://maps.app.goo.gl/jnF8yycuyAKjeSuH7?g_st=ic" target="_blank">Vendndodhja</a>
+    <h3 class="location-name reveal">Në Shtëpi</h3>
+    <p class="location-sub reveal">Lipjan, Kosovë</p>
+    <a class="map-btn reveal" href="https://www.google.com/maps/place/77-27+Dardania,+Godanc+i+Posht%C3%ABm+72000/@42.4553393,21.0436662,17z/data=!3m1!4b1!4m6!3m5!1s0x13537f078194307d:0xc5f83d2db14a6841!8m2!3d42.4553393!4d21.0462411!16s%2Fg%2F11g6586q1w?entry=ttu&g_ep=EgoyMDI2MDkwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Vendndodhja</a>
   </div>
 
-      <svg class="floral-svg reveal" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M100 195 Q95 160 90 140 Q85 120 100 105" stroke="#5a4a38" stroke-width="1.2" fill="none"/>
-      <path d="M100 170 Q115 155 120 140 Q125 125 115 115" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <path d="M95 155 Q75 145 70 130 Q80 120 95 130" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <path d="M105 145 Q125 135 128 120 Q118 112 107 125" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="100" cy="82" rx="18" ry="28" transform="rotate(-20 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="100" cy="82" rx="18" ry="28" transform="rotate(20 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="100" cy="82" rx="18" ry="28" transform="rotate(60 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="100" cy="82" rx="18" ry="28" transform="rotate(-60 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="100" cy="82" rx="18" ry="28" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="100" cy="82" rx="11" ry="18" transform="rotate(-30 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="100" cy="82" rx="11" ry="18" transform="rotate(30 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="100" cy="82" rx="11" ry="18" transform="rotate(90 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <circle cx="100" cy="82" r="6" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <circle cx="100" cy="82" r="2.5" fill="#5a4a38" opacity="0.4"/>
-      <circle cx="140" cy="60" r="3" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="140" cy="52" rx="4" ry="7" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="140" cy="52" rx="4" ry="7" transform="rotate(60 140 60)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <ellipse cx="140" cy="52" rx="4" ry="7" transform="rotate(-60 140 60)" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <path d="M60 90 Q50 75 55 55 Q65 45 72 58 Q78 70 68 88 Z" stroke="#5a4a38" stroke-width="1" fill="none"/>
-      <line x1="64" y1="88" x2="60" y2="110" stroke="#5a4a38" stroke-width="1"/>
-      <path d="M64 75 Q55 80 50 90 Q56 95 64 90" stroke="#5a4a38" stroke-width="1" fill="none"/>
-    </svg>
+  <svg class="floral-svg reveal" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M100 195 Q95 160 90 140 Q85 120 100 105" stroke="#5a4a38" stroke-width="1.2" fill="none"/>
+    <path d="M100 170 Q115 155 120 140 Q125 125 115 115" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <path d="M95 155 Q75 145 70 130 Q80 120 95 130" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <path d="M105 145 Q125 135 128 120 Q118 112 107 125" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="100" cy="82" rx="18" ry="28" transform="rotate(-20 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="100" cy="82" rx="18" ry="28" transform="rotate(20 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="100" cy="82" rx="18" ry="28" transform="rotate(60 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="100" cy="82" rx="18" ry="28" transform="rotate(-60 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="100" cy="82" rx="18" ry="28" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="100" cy="82" rx="11" ry="18" transform="rotate(-30 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="100" cy="82" rx="11" ry="18" transform="rotate(30 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="100" cy="82" rx="11" ry="18" transform="rotate(90 100 82)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <circle cx="100" cy="82" r="6" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <circle cx="100" cy="82" r="2.5" fill="#5a4a38" opacity="0.4"/>
+    <circle cx="140" cy="60" r="3" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="140" cy="52" rx="4" ry="7" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="140" cy="52" rx="4" ry="7" transform="rotate(60 140 60)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <ellipse cx="140" cy="52" rx="4" ry="7" transform="rotate(-60 140 60)" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <path d="M60 90 Q50 75 55 55 Q65 45 72 58 Q78 70 68 88 Z" stroke="#5a4a38" stroke-width="1" fill="none"/>
+    <line x1="64" y1="88" x2="60" y2="110" stroke="#5a4a38" stroke-width="1"/>
+    <path d="M64 75 Q55 80 50 90 Q56 95 64 90" stroke="#5a4a38" stroke-width="1" fill="none"/>
+  </svg>
 </section>
 
 <!-- ═══════════════════════════════════════════════
-     COUNTDOWN — dark overlay, bg shows through
+     COUNTDOWN
      ═══════════════════════════════════════════════ -->
 <section class="s-countdown">
   <div class="section-inner">
-    <p class="countdown-title reveal">Koha deri në dasmën tonë</p>
+    <p class="countdown-title reveal">Koha deri në fejesën tonë</p>
     <div class="countdown-grid reveal">
       <div class="countdown-unit">
         <span class="countdown-num" id="cd-days">000</span>
@@ -1087,10 +841,8 @@ body {
   </div>
 </section>
 
-
-
 <!-- ═══════════════════════════════════════════════
-     RSVP — dark overlay, bg shows through
+     RSVP
      ═══════════════════════════════════════════════ -->
 <section class="s-rsvp">
   <div class="section-inner">
@@ -1109,7 +861,7 @@ body {
 
 <!-- ── FOOTER ── -->
 <footer class="footer">
-  <p class="footer-names">Aurora &amp; Defrim</p>
+  <p class="footer-names">Endrit &amp; Valentina</p>
 </footer>
 
 <!-- ── CONFIRM MODAL (Viber / WhatsApp) ── -->
@@ -1119,32 +871,26 @@ body {
     <h3>Konfirmo Praninë</h3>
     <p>Ku dëshironi ta konfirmoni?</p>
     <div class="confirm-apps">
+      <a class="confirm-app-btn" href="viber://chat?number=+38344556613" target="_blank">
+        <div class="icon-flat viber-bg">
+          <img src="viber.png" alt="Viber">
+        </div>
+        <span class="confirm-app-label">Viber</span>
+      </a>
 
-      <div class="confirm-apps">
-
-  <a class="confirm-app-btn" href="viber://chat?number=+38344556613" target="_blank">
-  <div class="icon-flat viber-bg">
-    <img src="viber.png" alt="Viber">
-  </div>
-  <span class="confirm-app-label">Viber</span>
-</a>
-
-  <a class="confirm-app-btn" href="https://wa.me/38344556613" target="_blank">
-  <div class="icon-flat whatsapp-bg">
-    <img src="whatsapp.png" alt="WhatsApp">
-  </div>
-  <span class="confirm-app-label">WhatsApp</span>
-</a>
-
-</div>
-
+      <a class="confirm-app-btn" href="https://wa.me/38344556613" target="_blank">
+        <div class="icon-flat whatsapp-bg">
+          <img src="whatsapp.png" alt="WhatsApp">
+        </div>
+        <span class="confirm-app-label">WhatsApp</span>
+      </a>
     </div>
   </div>
 </div>
 
 <script>
   function updateCountdown() {
-    const diff = new Date('2026-07-31T19:00:00') - new Date();
+    const diff = new Date('2026-08-23T19:00:00') - new Date();
     const d = diff > 0 ? Math.floor(diff / 86400000) : 0;
     const h = diff > 0 ? Math.floor((diff % 86400000) / 3600000) : 0;
     const m = diff > 0 ? Math.floor((diff % 3600000) / 60000) : 0;
@@ -1160,7 +906,6 @@ body {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
 </script>
 </body>
 </html>
