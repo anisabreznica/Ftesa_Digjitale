@@ -168,7 +168,7 @@
   }
   @keyframes scrollPulse {
     0%, 100% { opacity: 0.35; }
-    50%        { opacity: 1; }
+    50%      { opacity: 1; }
   }
 
   /* ══════════════════════════════════════════════════════
@@ -430,6 +430,28 @@
     margin-bottom: 2.5rem;
   }
 
+  .map-btn {
+    display: inline-block;
+    background: var(--dark-brown);
+    color: var(--cream);
+    padding: 1rem 3.2rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .map-btn:hover {
+    background: var(--warm-brown);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  }
+
   /* ── RSVP (dark) ──────────────────────────────────────── */
   .rsvp-heading {
     font-family: 'Cormorant Garamond', serif;
@@ -509,7 +531,7 @@
     opacity: 1; transform: translateY(0); 
   }
 
-  /* ── CONFIRM MODAL (Viber / WhatsApp choice) ─────────── */
+  /* ── CONFIRM MODAL (WhatsApp direct) ──────────────────── */
   .confirm-overlay {
     display: none;
     position: fixed;
@@ -575,7 +597,6 @@
   .confirm-apps {
     display: flex;
     justify-content: center;
-    gap: 2rem;
   }
 
   .confirm-app-btn {
@@ -616,7 +637,6 @@
   }
 
   .whatsapp-bg { background-color: #ffffff; }
-  .viber-bg { background-color: #ffffff; }
 
   .confirm-app-btn:hover .icon-flat {
     transform: translateY(-5px);
@@ -666,7 +686,6 @@
     .hero-names { line-height: 1; }
     .hero-countdown { flex-wrap: wrap; gap: 1rem; }
     .countdown-grid { gap: 1rem; }
-    .confirm-apps { flex-direction: column; gap: 1rem; }
   }
 
   @media (max-width: 340px) {
@@ -783,7 +802,7 @@
     <p class="details-label reveal" style="color:var(--text-mid);">Vendndodhja</p>
     <h3 class="location-name reveal">Në Shtëpi</h3>
     <p class="location-sub reveal">Lipjan, Kosovë</p>
-    <a class="map-btn reveal" href="https://www.google.com/maps/place/77-27+Dardania,+Godanc+i+Posht%C3%ABm+72000/@42.4553393,21.0436662,17z/data=!3m1!4b1!4m6!3m5!1s0x13537f078194307d:0xc5f83d2db14a6841!8m2!3d42.4553393!4d21.0462411!16s%2Fg%2F11g6586q1w?entry=ttu&g_ep=EgoyMDI2MDkwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Vendndodhja</a>
+    <a class="map-btn reveal" href="https://www.google.com/maps/place/77-27+Dardania,+Godanc+i+Posht%C3%ABm+72000/@42.4553393,21.0436662,17z/data=!3m1!4b1!4m6!3m5!1s0x13537f078194307d:0xc5f83d2db14a6841!8m2!3d42.4553393!4d21.0462411!16s%2Fg%2F11g6586q1w?entry=ttu&g_ep=EgoyMDI2MDkwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Vendndodhja</a>
   </div>
 
   <svg class="floral-svg reveal" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -864,20 +883,13 @@
   <p class="footer-names">Endrit &amp; Valentina</p>
 </footer>
 
-<!-- ── CONFIRM MODAL (Viber / WhatsApp) ── -->
+<!-- ── CONFIRM MODAL (WhatsApp only) ── -->
 <div class="confirm-overlay" onclick="if(event.target===this)this.classList.remove('open')">
   <div class="confirm-modal">
     <button class="confirm-modal-close" onclick="document.querySelector('.confirm-overlay').classList.remove('open')">&times;</button>
     <h3>Konfirmo Praninë</h3>
-    <p>Ku dëshironi ta konfirmoni?</p>
+    <p>Konfirmoni pjesëmarrjen tuaj përmes WhatsApp-it</p>
     <div class="confirm-apps">
-      <a class="confirm-app-btn" href="viber://chat?number=+38344556613" target="_blank">
-        <div class="icon-flat viber-bg">
-          <img src="viber.png" alt="Viber">
-        </div>
-        <span class="confirm-app-label">Viber</span>
-      </a>
-
       <a class="confirm-app-btn" href="https://wa.me/38344556613" target="_blank">
         <div class="icon-flat whatsapp-bg">
           <img src="whatsapp.png" alt="WhatsApp">
